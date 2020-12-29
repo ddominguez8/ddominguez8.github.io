@@ -1,3 +1,5 @@
+/*Navigation bar was made with the help of a Youtube tutorial which can be followed here: 
+https://www.youtube.com/watch?v=FEmysQARWFU&t=69s*/
 body {
     margin:0;
     background: #222;
@@ -32,7 +34,7 @@ header::after {
 }
 
 h1 {
-    padding-top: 5px;
+    padding-top: 10px;
 }
 nav ul {
     margin:0, 10;
@@ -42,6 +44,9 @@ nav li {
     display: inline-block;
     margin-left: 70px;
     position: relative;
+    /*Contrary to the tutorial, I had to solve the issue with the block not appearing in the correct location by adding some padding 
+    above the list items*/
+    padding-top: 5px;
 }
 
 nav a { 
@@ -62,7 +67,7 @@ nav a::before {
     width: 0%;
     background-color: #444;
     position: absolute;
-    top: 0;
+    top: 0px;
     transition: all ease-in-out 250ms;
 
     
